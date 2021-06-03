@@ -1,7 +1,7 @@
 
 import {NBSObject} from '../src/NBSObject';
 
-describe('EventEmitter', () => {
+describe('NBSObject', () => {
     class TestObject extends NBSObject {
         public testMethod(): TestObject {
             return this;
