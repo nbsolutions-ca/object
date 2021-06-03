@@ -1,0 +1,53 @@
+{
+  "name": "@nbsolutions/object",
+  "version": "0.0.0",
+  "description": "Root object for NBS framework",
+  "main": "./lib/api.js",
+  "types": "./types/api.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .ts,.tsx '?(src|spec)/**/*.?(ts|tsx)' --cache",
+    "docs": "typedoc --excludePrivate --includeVersion -readme ./README.md --out ./docs ./src",
+    "build": "npm run lint && tsc",
+    "build:release": "tsc",
+    "changelog": "auto-changelog --output CHANGELOG.md -p --release-summary --ignore-commit-pattern chore",
+    "test": "npm run lint && jest",
+    "preversion": "npm test",
+    "version": "NODE_ENV=production npm run-script build:release && npm run-script docs && npm run changelog && git add CHANGELOG.md docs && git commit -m 'chore: changelog'",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbsolutions-ca/object.git"
+  },
+  "keywords": [
+    "oop",
+    "oriented",
+    "programming",
+    "object",
+    "listener",
+    "emitter",
+    "pattern",
+    "norman",
+    "nbsolutions"
+  ],
+  "author": "norman@nbsolutions.ca",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nbsolutions-ca/object/issues"
+  },
+  "homepage": "https://github.com/nbsolutions-ca/object#readme",
+  "devDependencies": {
+    "@nbsolutions/eslint-plugin": "1.0.0",
+    "@types/jest": "26.0.23",
+    "@typescript-eslint/eslint-plugin": "4.26.0",
+    "@typescript-eslint/parser": "4.26.0",
+    "auto-changelog": "2.3.0",
+    "eslint": "7.27.0",
+    "jest": "26.6.3",
+    "ts-jest": "26.5.6",
+    "ts-node": "10.0.0",
+    "typedoc": "0.20.36",
+    "typedoc-plugin-markdown": "3.9.0",
+    "typescript": "4.2.4"
+  }
+}

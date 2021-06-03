@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es3",
+        "declaration": true,
+        "declarationDir": "./types",
+        "sourceMap": true,
+        "outDir": "./lib",
+        "importHelpers": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "moduleResolution": "node",
+        "baseUrl": "./src/",
+        "plugins": [],
+        "incremental": true
+    },
+    "include": [
+        "src/"
+    ],
+    "exclude": [
+        "**/*.spec.ts",
+        "*/.spec.ts",
+        "tests",
+        "lib",
+        "types",
+        "spec",
+        "node_modules",
+        "jest.d.ts"
+    ]
+}
