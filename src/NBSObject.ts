@@ -58,6 +58,11 @@ export class NBSObject {
         }
     }
 
+    /**
+     * Returns true if the given value is `null` or `undefined`
+     * @param o Any value
+     * @returns 
+     */
     public static isVoid<T = any>(o: T): boolean {
         return o === null || o === undefined;
     }
