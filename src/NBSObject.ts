@@ -23,18 +23,12 @@
  */
 
 export class NBSObject {
-    private $nbsClassName: string;
-
     public constructor() {
         this.$nbsAutobind(this);
     }
 
     public testBind(): NBSObject {
         return this;
-    }
-
-    protected _getNBSClassName(): string {
-        return this.constructor.name;
     }
 
     public getClassName(): string {
