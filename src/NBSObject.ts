@@ -21,9 +21,24 @@
  * overriding `_excludeNBSObjectAutoBindingsFor` and returning a list of method names
  * as strings that shouldn't be bound to this instance.
  */
+
 export class NBSObject {
+    private $nbsClassName: string;
+
     public constructor() {
         this.$nbsAutobind(this);
+    }
+
+    public testBind(): NBSObject {
+        return this;
+    }
+
+    protected _getNBSClassName(): string {
+        return this.constructor.name;
+    }
+
+    public getClassName(): string {
+        return this.constructor.name;
     }
 
     private $nbsAutobind(context: any): void {
@@ -83,5 +98,15 @@ export class NBSObject {
 
     protected _excludeNBSObjectAutoBindingsFor(): string[] {
         return [];
+    }
+
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+    public static getClassName(o: any): string {
+        if (o.prototype) {
+            return o.prototype.constructor.name;
+        }
+        else {
+            return o.constructor.name;
+        }
     }
 }

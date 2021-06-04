@@ -16,6 +16,20 @@ describe('NBSObject', () => {
         expect(m()).toBe(obj);
     });
 
+    it('class name - static', () => {
+        expect(NBSObject.getClassName(NBSObject)).toBe('NBSObject');
+        expect(NBSObject.getClassName(TestObject)).toBe('TestObject');
+    });
+
+    it('class name - instance', () => {
+        let nbs: NBSObject = new NBSObject();
+        let obj: TestObject = new TestObject();
+        expect(NBSObject.getClassName(nbs)).toBe('NBSObject');
+        expect(NBSObject.getClassName(obj)).toBe('TestObject');
+        expect(nbs.getClassName()).toBe('NBSObject');
+        expect(obj.getClassName()).toBe('TestObject');
+    });
+
     it('auto binds all methods on nested class structures', () => {
         class Obj extends TestObject {
             public testMethod2(): Obj {
