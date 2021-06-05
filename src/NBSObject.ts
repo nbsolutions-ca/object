@@ -1,4 +1,6 @@
 
+import {INBSObject} from './INBSObject';
+
 /**
  * NBSObject serves as a root object for all NBS framework
  * classes. By default, all instance methods are bound to the instance.
@@ -21,14 +23,9 @@
  * overriding `_excludeNBSObjectAutoBindingsFor` and returning a list of method names
  * as strings that shouldn't be bound to this instance.
  */
-
-export class NBSObject {
+export class NBSObject implements INBSObject {
     public constructor() {
         this.$nbsAutobind(this);
-    }
-
-    public testBind(): NBSObject {
-        return this;
     }
 
     public getClassName(): string {
