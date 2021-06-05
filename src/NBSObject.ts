@@ -51,6 +51,10 @@ export class NBSObject {
                     return false;
                 }
 
+                if (typeof (this as any)[method] !== 'function') {
+                    return false;
+                }
+
                 if (excludes.length > 0) {
                     return excludes.indexOf(method) === -1;
                 }
