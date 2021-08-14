@@ -38,6 +38,7 @@
   "homepage": "https://github.com/nbsolutions-ca/object#readme",
   "devDependencies": {
     "@nbsolutions/eslint-plugin": "1.0.0",
+    "@nbsolutions/interfaces": "file:../interfaces/nbsolutions-interfaces-0.0.0.tgz",
     "@types/jest": "27.0.1",
     "@typescript-eslint/eslint-plugin": "4.29.1",
     "@typescript-eslint/parser": "4.29.1",
@@ -48,7 +49,12 @@
     "ts-node": "10.2.0",
     "typedoc": "0.21.5",
     "typedoc-plugin-markdown": "3.10.4",
-    "typescript": "4.3.5"
+    "typescript": "4.3.5",
+    "@nbsolutions/util": "file:../util/nbsolutions-util-1.0.0.tgz"
+  },
+  "peerDependencies": {
+    "@nbsolutions/interfaces": "*",
+    "@nbsolutions/util": "*"
   },
   "dependencies": {
     "tslib": "2.3.1"

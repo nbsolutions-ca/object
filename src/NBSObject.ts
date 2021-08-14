@@ -1,5 +1,5 @@
 
-import {INBSObject} from './INBSObject';
+import {INBSObject} from '@nbsolutions/interfaces';
 
 /**
  * NBSObject serves as a root object for all NBS framework
