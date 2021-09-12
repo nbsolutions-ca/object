@@ -1,4 +1,4 @@
-[@nbsolutions/object - v0.0.0](../README.md) / [Exports](../modules.md) / api
+[@nbsolutions/object - v0.0.0-alpha.0](../README.md) / [Exports](../modules.md) / api
 
 # Module: api
 
@@ -13,10 +13,10 @@
 
 ### NBSObject
 
-Re-exports: [NBSObject](../classes/nbsobject.nbsobject-1.md)
+Re-exports: [NBSObject](../classes/NBSObject.NBSObject-1.md)
 
 ___
 
 ### default
 
-Renames and exports: [NBSObject](../classes/nbsobject.nbsobject-1.md)
+Renames and exports: [NBSObject](../classes/NBSObject.NBSObject-1.md)
