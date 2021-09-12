@@ -1,6 +1,6 @@
 {
   "name": "@nbsolutions/object",
-  "version": "0.0.0",
+  "version": "0.0.0-alpha.0",
   "description": "Root object for NBS framework",
   "main": "./lib/api.js",
   "types": "./types/api.d.ts",
