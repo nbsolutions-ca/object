@@ -3,6 +3,10 @@
   "version": "0.0.0-alpha.0",
   "description": "Root object for NBS framework",
   "main": "./lib/api.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "types": "./types/api.d.ts",
   "scripts": {
     "lint": "eslint --ext .ts,.tsx '?(src|spec)/**/*.?(ts|tsx)' --cache",
