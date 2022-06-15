@@ -1,8 +1,6 @@
-[@nbsolutions/object - v0.0.0](../README.md) / [Exports](../modules.md) / [NBSObject](../modules/NBSObject.md) / NBSObject
+[@nbsolutions/object - v0.0.0](../README.md) / [Exports](../modules.md) / NBSObject
 
 # Class: NBSObject
-
-[NBSObject](../modules/NBSObject.md).NBSObject
 
 NBSObject serves as a root object for all NBS framework
 classes. By default, all instance methods are bound to the instance.
@@ -33,15 +31,15 @@ as strings that shouldn't be bound to this instance.
 
 ### Constructors
 
-- [constructor](NBSObject.NBSObject-1.md#constructor)
+- [constructor](NBSObject.md#constructor)
 
 ### Methods
 
-- [\_excludeNBSObjectAutoBindingsFor](NBSObject.NBSObject-1.md#_excludenbsobjectautobindingsfor)
-- [\_skipNBSObjectAutoBind](NBSObject.NBSObject-1.md#_skipnbsobjectautobind)
-- [getClassName](NBSObject.NBSObject-1.md#getclassname)
-- [getClassName](NBSObject.NBSObject-1.md#getclassname)
-- [isVoid](NBSObject.NBSObject-1.md#isvoid)
+- [\_excludeNBSObjectAutoBindingsFor](NBSObject.md#_excludenbsobjectautobindingsfor)
+- [\_skipNBSObjectAutoBind](NBSObject.md#_skipnbsobjectautobind)
+- [getClassName](NBSObject.md#getclassname)
+- [getClassName](NBSObject.md#getclassname-1)
+- [isVoid](NBSObject.md#isvoid)
 
 ## Constructors
 
@@ -51,7 +49,7 @@ as strings that shouldn't be bound to this instance.
 
 #### Defined in
 
-[NBSObject.ts:27](https://github.com/nbsolutions-ca/object/blob/2c4ab11/src/NBSObject.ts#L27)
+[NBSObject.ts:27](https://github.com/nbsolutions-ca/object-js/blob/b4ba521/src/NBSObject.ts#L27)
 
 ## Methods
 
@@ -65,7 +63,7 @@ as strings that shouldn't be bound to this instance.
 
 #### Defined in
 
-[NBSObject.ts:94](https://github.com/nbsolutions-ca/object/blob/2c4ab11/src/NBSObject.ts#L94)
+[NBSObject.ts:94](https://github.com/nbsolutions-ca/object-js/blob/b4ba521/src/NBSObject.ts#L94)
 
 ___
 
@@ -79,7 +77,7 @@ ___
 
 #### Defined in
 
-[NBSObject.ts:80](https://github.com/nbsolutions-ca/object/blob/2c4ab11/src/NBSObject.ts#L80)
+[NBSObject.ts:80](https://github.com/nbsolutions-ca/object-js/blob/b4ba521/src/NBSObject.ts#L80)
 
 ___
 
@@ -97,7 +95,7 @@ INBSObject.getClassName
 
 #### Defined in
 
-[NBSObject.ts:31](https://github.com/nbsolutions-ca/object/blob/2c4ab11/src/NBSObject.ts#L31)
+[NBSObject.ts:31](https://github.com/nbsolutions-ca/object-js/blob/b4ba521/src/NBSObject.ts#L31)
 
 ___
 
@@ -117,7 +115,7 @@ ___
 
 #### Defined in
 
-[NBSObject.ts:99](https://github.com/nbsolutions-ca/object/blob/2c4ab11/src/NBSObject.ts#L99)
+[NBSObject.ts:99](https://github.com/nbsolutions-ca/object-js/blob/b4ba521/src/NBSObject.ts#L99)
 
 ___
 
@@ -145,4 +143,4 @@ Returns true if the given value is `null` or `undefined`
 
 #### Defined in
 
-[NBSObject.ts:76](https://github.com/nbsolutions-ca/object/blob/2c4ab11/src/NBSObject.ts#L76)
+[NBSObject.ts:76](https://github.com/nbsolutions-ca/object-js/blob/b4ba521/src/NBSObject.ts#L76)

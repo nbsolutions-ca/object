@@ -4,7 +4,16 @@
 
 ## Table of contents
 
-### Modules
+### References
 
-- [NBSObject](modules/NBSObject.md)
-- [api](modules/api.md)
+- [default](modules.md#default)
+
+### Classes
+
+- [NBSObject](classes/NBSObject.md)
+
+## References
+
+### default
+
+Renames and re-exports [NBSObject](classes/NBSObject.md)
